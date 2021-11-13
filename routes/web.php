@@ -15,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\MainController@index')->name('index');
 
-Route::get('/receipt', 'App\Http\Controllers\MainController@receipt')->name('receipt');
+// Route::get('/{id?}', 'App\Http\Controllers\MainController@addCount')->name('add-count');
+
+Route::get('/{id}/update', 'App\Http\Controllers\MainController@update')->name('update');
+
+Route::get('/queue', 'App\Http\Controllers\MainController@queue')->name('queue');
+
+Route::get('/{id?}', 'App\Http\Controllers\MainController@inWork')->name('inWork');
