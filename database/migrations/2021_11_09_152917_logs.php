@@ -18,6 +18,7 @@ class Logs extends Migration
         $table->string('task_id');
         $table->string('status');
         $table->timestamp('created_at');
+        $table->timestamp('updated_at');
       });
     }
 
